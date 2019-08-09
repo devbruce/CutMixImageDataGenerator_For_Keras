@@ -53,11 +53,11 @@ class CutMixImageDataGenerator():
 
         X = X_1
         for i in range(reshape_size):
-            cut_size = int(self.img_size * cut_ratio[i])
-            x1 = random.randint(0, (self.img_size-1) - cut_size)
+            cut_size = int((self.img_size-1) * cut_ratio[i])
             y1 = random.randint(0, (self.img_size-1) - cut_size)
-            x2 = x1 + cut_size
+            x1 = random.randint(0, (self.img_size-1) - cut_size)
             y2 = y1 + cut_size
+            x2 = x1 + cut_size
             cut_arr = cut_img[i][y1:y2, x1:x2]
             cutmix_img = X_1[i]
             cutmix_img[y1:y2, x1:x2] = cut_arr
