@@ -28,7 +28,7 @@ So there would no augmentation
 
 <br>
 
-- Why there are two same generators? (`generator1`, `generator2`)  
+- Why are there two same generators? (`generator1`, `generator2`)  
 \-\-\> To Solve Reference Problem  
 
 <br>
