@@ -1,11 +1,20 @@
 # CutMixImageDataGenerator (Keras)
 
-![Python-v3.7.3](https://img.shields.io/badge/Python-v3.7.3-blue)
-![Keras-v2.2.4](https://img.shields.io/badge/Keras-v2.2.4-brightgreen)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/DevBruce/CutMixImageDataGenerator_For_Keras)
 
-**Version 0.1 (Beta)**  
+> Paper: [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features](https://arxiv.org/abs/1905.04899)
 
 <br>
+
+## Install
+
+```bash
+$ pip install cutmix-keras
+```
+
+<br>
+
+## How To Use
 
 ```python
 class CutMixImageDataGenerator():
@@ -33,9 +42,13 @@ So there would no augmentation
 
 <br>
 
-## Using Example
+### Using Example
 
 ```python
+# (some codes) ...
+from cutmix_keras import CutMixImageDataGenerator  # Import CutMix
+
+
 train_datagen = ImageDataGenerator(
     rescale=1./255,
 )
