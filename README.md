@@ -17,34 +17,6 @@ $ pip install cutmix-keras
 ## How To Use
 
 ```python
-class CutMixImageDataGenerator():
-    def __init__(self, generator1, generator2, img_size, batch_size):
-        self.batch_index = 0
-        self.samples = generator1.samples
-        self.class_indices = generator1.class_indices
-        self.generator1 = generator1
-        self.generator2 = generator2
-        . . .
-```
-
-- `generator1`, `generator2` need same generator applied `flow` method
-
-<br>
-
-- `generator1`, `generator2` need `shuffle=True`  
-If `shuffle=False`, This generator cutmix with same images.  
-So there would no augmentation
-
-<br>
-
-- Why are there two same generators? (`generator1`, `generator2`)  
-\-\-\> To Solve Reference Problem  
-
-<br>
-
-### Using Example
-
-```python
 # (some codes) ...
 from cutmix_keras import CutMixImageDataGenerator  # Import CutMix
 
@@ -85,3 +57,16 @@ train_generator = CutMixImageDataGenerator(
     batch_size=BATCH_SIZE,
 )
 ```
+
+- `generator1`, `generator2` need same generator applied `flow` method
+
+<br>
+
+- `generator1`, `generator2` need `shuffle=True`  
+If `shuffle=False`, This generator cutmix with same images.  
+So there would no augmentation
+
+<br>
+
+- Why are there two same generators? (`generator1`, `generator2`)  
+\-\-\> To Solve Reference Problem  
