@@ -4,6 +4,19 @@
 
 > Paper: [CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features](https://arxiv.org/abs/1905.04899)
 
+## Citation
+
+```
+@misc{yun2019cutmix,
+    title={CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features},
+    author={Sangdoo Yun and Dongyoon Han and Seong Joon Oh and Sanghyuk Chun and Junsuk Choe and Youngjoon Yoo},
+    year={2019},
+    eprint={1905.04899},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
+
 <br>
 
 ## Install
