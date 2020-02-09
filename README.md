@@ -62,13 +62,20 @@ train_generator2 = train_datagen.flow_from_dataframe(
     shuffle=True,  # Required
 )
 
-# CutMixImageDataGenerator
+# !! Define CutMixImageDataGenerator !!
 train_generator = CutMixImageDataGenerator(
     generator1=train_generator1,
     generator2=train_generator2,
     img_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
 )
+
+# (some codes) ...
+history = model.fit_generator(
+        generator=train_generator,
+        steps_per_epoch=train_generator.get_steps_per_epoch(),
+        # (some parameters) ...
+        )
 ```
 
 - `generator1`, `generator2` need same generator applied `flow` method
