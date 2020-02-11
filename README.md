@@ -27,7 +27,7 @@ $ pip install cutmix-keras
 
 <br>
 
-## How To Use
+## Using Example
 
 ```python
 # (some codes) ...
@@ -77,6 +77,14 @@ history = model.fit_generator(
         # (some parameters) ...
         )
 ```
+
+<br>
+
+### Example of Kaggle Kernel
+
+Link: [[KaKR\_2019\_3rd] CutMix, Ensemble (Keras)](https://www.kaggle.com/devbruce/kakr-2019-3rd-cutmix-ensemble-keras#Generator)
+
+<br>
 
 - `generator1`, `generator2` need same generator applied `flow` method
 
